@@ -1,0 +1,70 @@
+
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Набор HTML-материалов для урока — демо кружка</title>
+<style>
+  :root{--bg:#f4f6fa;--panel:#fff;--ink:#1f2630;--muted:#5d6874;--line:#dbe2ea;--accent:#2f6f9f}
+  *{box-sizing:border-box}
+  body{margin:0;padding:28px 16px 56px;background:var(--bg);color:var(--ink);
+       font-family:-apple-system,"Segoe UI",Roboto,"Helvetica Neue",Arial,sans-serif;font-size:18px;line-height:1.5}
+  .wrap{max-width:960px;margin:0 auto}
+  h1{font-size:clamp(26px,4vw,38px);margin:0 0 8px;line-height:1.2}
+  .sub{color:var(--muted);margin:0 0 20px}
+  .hint{background:var(--panel);border:1px solid var(--line);border-left:6px solid var(--accent);
+        border-radius:12px;padding:14px 18px;margin:0 0 24px;font-size:17px}
+  .grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(280px,1fr));gap:18px}
+  a.card{display:block;text-decoration:none;color:inherit;background:var(--panel);border:1px solid var(--line);
+         border-radius:18px;padding:20px;box-shadow:0 5px 16px rgba(31,38,48,.08);transition:transform .15s}
+  a.card:hover{transform:translateY(-3px);border-color:var(--accent)}
+  a.card:focus-visible{outline:3px solid var(--accent);outline-offset:3px}
+  .ico{font-size:32px}
+  h2{font-size:21px;margin:8px 0 6px}
+  p{margin:0 0 8px;font-size:17px}
+  .meta{color:var(--muted);font-size:15px}
+  footer{margin-top:28px;padding-top:14px;border-top:1px solid var(--line);color:var(--muted);font-size:15px}
+</style>
+</head>
+<body>
+<div class="wrap">
+  <h1>🎓 Набор HTML-материалов для урока</h1>
+  <p class="sub">Демонстрационные файлы к Практике 1.6 «Создание HTML-материалов с помощью нейросети»</p>
+  <p class="hint">Все пять файлов самодостаточные: HTML, CSS и JavaScript внутри одного файла, никаких внешних библиотек.
+     Работают без интернета — просто откройте в браузере. Это образцы того, что вы получите от нейросети по промту из инструкции.</p>
+
+  <div class="grid">
+    <a class="card" href="01_kartochki_organy_chuvstv.html">
+      <div class="ico">🃏</div><h2>Интерактивные карточки</h2>
+      <p>Органы чувств человека. Переворот карточки, перемешивание, отметка «выучено», печать.</p>
+      <p class="meta">Биология, 8 класс · 12 карточек</p>
+    </a>
+    <a class="card" href="02_test_organy_chuvstv.html">
+      <div class="ico">✅</div><h2>Тест с проверкой</h2>
+      <p>Подсветка верных и неверных ответов, объяснения, прогресс-бар, отметка по критериям.</p>
+      <p class="meta">Биология, 8 класс · 10 вопросов</p>
+    </a>
+    <a class="card" href="03_prezentaciya_drobi.html">
+      <div class="ico">🖥️</div><h2>HTML-презентация</h2>
+      <p>Слайды со стрелками и свайпами, тёмная тема, интерактив внутри слайда.</p>
+      <p class="meta">Математика, 5 класс · 8 слайдов</p>
+    </a>
+    <a class="card" href="04_igra_sootvetstvie.html">
+      <div class="ico">🔗</div><h2>Игра на соответствие</h2>
+      <p>Писатели и произведения. Подбор пар, счётчик попыток, окно поздравления.</p>
+      <p class="meta">Литература, 5–6 класс · 8 пар</p>
+    </a>
+    <a class="card" href="05_taymlain_vov.html">
+      <div class="ico">🕒</div><h2>Лента времени</h2>
+      <p>Ключевые сражения Великой Отечественной войны. Раскрывающиеся карточки событий.</p>
+      <p class="meta">История, 9 класс · 6 событий</p>
+    </a>
+  </div>
+
+  <footer>
+    Материалы созданы с помощью нейросети и проверены преподавателем. Персональные данные учеников не собираются и никуда не отправляются.
+  </footer>
+</div>
+</body>
+</html>
